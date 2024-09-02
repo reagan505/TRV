@@ -1,0 +1,226 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.top {
+  background-color: #003366;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.top img {
+  display: block;
+  max-width: 100%;
+}
+
+.top nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.top nav a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #f1c40f;
+}
+
+.about {
+  text-align: center;
+  background-image: url(./assets/pla.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 60px 20px;
+  color: rgb(44, 110, 209);
+  background-blend-mode: overlay;
+}
+
+.about h2 {
+  font-size: 32px;
+  line-height: 1.4;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background-color: #ddd;
+  margin: 40px 0;
+}
+
+.destinations {
+  padding: 40px 20px;
+  background-image: url(./assets/aerpo.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 28px;
+  color: #004080;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.column {
+  margin: 10px;
+  flex: 1;
+  min-width: 280px;
+}
+
+.column img {
+  width: 100%;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.column img:hover {
+  transform: scale(1.05);
+}
+
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  max-width: 320px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 22px;
+  margin: 15px 0;
+  color: #004080;
+}
+
+.card p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #004080;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0066cc;
+}
+
+/* Footer */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer-section h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #f1c40f;
+}
+
+.footer-section p, .footer-section ul, .footer-section a {
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #f1c40f;
+}
+
+.footer-section ul li a:hover {
+  color: #e67e22;
+}
+
+.footer-section .social a {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.footer-section .social img {
+  vertical-align: middle;
+}
+
+.footer-bottom {
+  background-color: #222;
+  padding: 15px 0;
+  margin-top: 20px;
+  font-size: 14px;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Package Review</title>
+  <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+<header class="top">
+  <img src="./assets/pla.jfif" width="180" height="60" alt="Plane Logo">
+  <nav>
+    <a href="./index.html" class="active">HOME</a>
+    <a href="./about.html">ABOUT</a>
+    <a href="./packages">PACKAGES</a>
+  </nav>
+</header>
+
+<section class="about">
+  <h2>EXPLORE THE WORLD WITH US,<br>TRAVEL TO DESTINATIONS OF YOUR DREAMS</h2>
+</section>
+
+<hr />
+
+<section class="destinations">
+    <h1 class="section-title"> Destinations</h1>
+    <div class="row">
+      <div class="column">
+        <img src="./assets/euro.jfif" alt="">
+        <img src="./assets/two.jfif" alt="">
+      </div>
+      <div class="column">
+        <img src="./assets/kenya safari.jfif" alt="">
+        <img src="./assets/sri lanka.jfif" alt="">
+      </div>
+    </div>
+  </section>
+
+<section class="holiday-cards">
+  <h1 class="section-title">BOOK YOUR  DESTINATIONS</h1>
+  <div class="cards-container">
+    <div class="card">
+      <img src="./assets/one.jfif" alt="Mombasa Island">
+      <div class="card-content">
+        <h2><em>Mombasa Island</em></h2>
+        <p>3500 USD</p>
+        <a href="#" class="btn">Book flyte</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./assets/two.jfif" alt="Chile Island">
+      <div class="card-content">
+        <h2><em>Chile Island</em></h2>
+        <p>4500 USD</p>
+        <a href="#" class="btn">Book flyte</a>
+      </div>
+    </div>
+    <div class="card">
+      <img src="./assets/three.jfif" alt="Exotic Island">
+      <div class="card-content">
+        <h2><em>Exotic Island</em></h2>
+        <p>5500 USD</p>
+        <a href="#" class="btn">Book flyte</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- <div class="card">
+  <img src="./assets/three.jfif" alt="Exotic Island">
+  <div class="card-content">
+    <h2><em>Exotic Island</em></h2>
+    <p>5500 USD</p>
+    <a href="#" class="btn">Book Now</a>
+  </div>
+</div>
+</div> -->
+</section>
+
+<hr />
+
+<footer class="footer">
+  <div class="footer-content">
+    <!-- <div class="footer-section about">
+      <h3>About Us</h3>
+      <p>Aqua Africa Tourism offers unparalleled travel experiences to exotic destinations. Explore the beauty of Africa and beyond with our curated packages.</p>
+    </div> -->
+    <div class="footer-section links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="home">Home</a></li>
+        <li><a href="about">About</a></li>
+        <li><a href="packages">Packages</a></li>
+        <li><a href="contact">Contact Us</a></li>
+      </ul>
+    </div>
+    <div class="footer-section contact">
+      <h3>Contact Us</h3>
+      <p>Email: info@aquaafricatourism.com</p>
+      <p>Phone: +123-456-7890</p>
+      <p>Address: 123 Ocean Drive, Coastal City, AA</p>
+    </div>
+    <div class="footer-section social">
+      <h3>Follow Us</h3>
+      <a href="#"><img src="./assets/fb.jfif" alt="Facebook" width="24"></a>
+      <a href="#"><img src="./assets/tw.png" alt="Twitter" width="24"></a>
+      <a href="#"><img src="./assets/ig.jfif" alt="Instagram" width="24"></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2024 Aqua Africa Tourism | All rights reserved.</p>
+  </div>
+</footer>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const buttons = document.querySelectorAll(".btn");
+
+    buttons.forEach(button => {
+      button.addEventListener("click", function(event) {
+        event.preventDefault();
+
+        const destination = this.closest(".card").querySelector("h2").textContent;
+        const price = this.closest(".card").querySelector("p").textContent;
+
+        alert(`You are about to book a trip to ${destination} at a cost of ${price}.`);
+      });
+    });
+  });
+</script>
+
+</body>
+</html>

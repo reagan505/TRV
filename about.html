@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Aqua Travel</title>
+  <link rel="stylesheet" href="./about.css">
+</head>
+<body>
+  <header class="top">
+    <img src="./assets/pla.jfif" width="180" height="60" alt="Plane Logo">
+    <nav>
+      <a href="./index.html" class="active">HOME</a>
+      <a href="./about.html">ABOUT</a>
+      <a href="./packages.html">PACKAGES</a>
+    </nav>
+  </header>
+
+  <div class="about-section">
+    <h1>ABOUT US</h1>
+    <p>Aqua Travel offers immersive, eco-friendly adventures that connect travelers with stunning natural landscapes, wildlife, and cultural experiences, providing unforgettable journeys through unique destinations and pristine environments.</p>
+  </div>
+  <h2 style="text-align:center">Our Team</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="./assets/gwee.jfif" alt="Reagan Gwee" width="160">
+        <div class="container">
+          <h2>Reagan Gwee</h2>
+          <p class="title">CEO & Founder</p>
+          <p>Passionate about eco-tourism and sustainable travel.</p>
+          <p>reagan@gmail.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="./assets/per 2.jfif" alt="Loyal King" width="160">
+        <div class="container">
+          <h2>Loyal King</h2>
+          <p class="title">Art Director</p>
+          <p>Creating visual journeys through design.</p>
+          <p>loyal@gmail.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="column">
+      <div class="card">
+        <img src="./assets/per 3.jfif" alt="Moses Caicedo" width="160">
+        <div class="container">
+          <h2>Moses Caicedo</h2>
+          <p class="title">Designer</p>
+          <p>Bringing concepts to life with creativity.</p>
+          <p>moses@gmail.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr />
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="home">Home</a></li>
+          <li><a href="about">About</a></li>
+          <li><a href="packages">Packages</a></li>
+          <li><a href="contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-section contact">
+        <h3>Contact Us</h3>
+        <p>Email: info@aquaafricatourism.com</p>
+        <p>Phone: +123-456-7890</p>
+        <p>Address: 123 Ocean Drive, Coastal City, AA</p>
+      </div>
+      <div class="footer-section social">
+        <h3>Follow Us</h3>
+        <a href="#"><img src="./assets/fb.jfif" alt="Facebook" width="24"></a>
+        <a href="#"><img src="./assets/tw.png" alt="Twitter" width="24"></a>
+        <a href="#"><img src="./assets/ig.jfif" alt="Instagram" width="24"></a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Aqua Africa Tourism | All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const buttons = document.querySelectorAll(".button");
+
+      buttons.forEach(button => {
+        button.addEventListener("click", function(event) {
+          event.preventDefault();
+          alert("Contact button clicked.");
+        });
+      });
+    });
+  </script>
+</body>
+</html>
