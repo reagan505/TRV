@@ -1,38 +1,12 @@
-/* About Us Section */
-.about-section {
-  padding: 50px;
-  text-align: center;
-  background-color: #474e5d;
-  color: white;
-  margin-top: 3%;
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
 }
 
-.team-title {
-  text-align: center;
-  margin: 20px 0;
-  font-size: 2em;
-}
-
-.row {
-  padding: 0 16px;
-  background-color: #e5ebf1;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  margin: 8px;
-  transition: transform 0.3s;
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.card:hover {
-  transform: scale(1.05);
-}
-
+/* Header */
 .top {
   background-color: #004080;
   color: white;
@@ -61,43 +35,50 @@
   font-weight: bold;
 }
 
-.container {
-  padding: 0 16px;
+/* Sign Up Section */
+.signup-section {
+  padding: 40px;
+  max-width: 500px;
+  margin: 50px auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.container::after, .row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-.title {
-  color: grey;
-}
-
-.button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
+.signup-section h1 {
   text-align: center;
-  cursor: pointer;
-  width: 100%;
+  margin-bottom: 30px;
+}
+
+.signup-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-section label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.signup-section input {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
   border-radius: 4px;
 }
 
-.button:hover {
-  background-color: #555;
+.button {
+  background-color: #004080;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
 }
 
-@media screen and (max-width: 650px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
+.button:hover {
+  background-color: #002f66;
 }
 
 /* Footer */
@@ -105,6 +86,9 @@ footer.footer {
   background-color: #00509E;
   color: white;
   padding: 20px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer-content {
@@ -136,10 +120,6 @@ footer.footer {
 
 .footer-section ul li a:hover {
   color: #ffcc00;
-}
-
-.footer-section p {
-  margin: 5px 0;
 }
 
 .footer-section.social a {

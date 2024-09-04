@@ -1,0 +1,254 @@
+/* General Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: #00509E;
+}
+
+a {
+  text-decoration: none;
+  color: #00509E;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #003F7D;
+}
+
+/* Header */
+header.top {
+  background-color: #00509E;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+  margin-left: 20px;
+}
+
+nav a {
+  color: white;
+  margin: 0 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+nav a.active {
+  border-bottom: 3px solid #ffcc00;
+}
+
+/* Sections */
+section {
+  padding: 20px;
+}
+
+/* About Section */
+section.about {
+  background: url('./assets/background.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+section.about h2 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+section.about p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* Holiday Cards Section */
+section.holiday-cards {
+  background-color: #f4f4f4;
+  padding: 40px 20px;
+}
+
+section.holiday-cards .section-title {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1.8em;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h2 {
+  font-size: 1.3em;
+  margin: 10px 0;
+}
+
+.card-content p {
+  font-size: 1.2em;
+  color: #e74c3c;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #c0392b;
+}
+
+/* Booking Section */
+section.booking {
+  background-color: #fff;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.booking form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.booking label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #00509E;
+}
+
+.booking input[type="number"],
+.booking input[type="text"] {
+  width: calc(100% - 22px);
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: border-color 0.3s ease;
+}
+
+.booking input:focus,
+.booking textarea:focus {
+  border-color: #00509E;
+  outline: none;
+}
+
+.booking button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #00509E;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  text-transform: uppercase;
+}
+
+.booking button:hover {
+  background-color: #003F7D;
+}
+
+/* Footer */
+footer.footer {
+  background-color: #00509E;
+  color: white;
+  padding: 20px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 10px;
+}
+
+.footer-section h3 {
+  font-size: 1.6em;
+  margin-bottom: 15px;
+}
+
+.footer-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 10px 0;
+}
+
+.footer-section ul li a {
+  color: white;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ffcc00;
+}
+
+.footer-section p {
+  margin: 5px 0;
+}
+
+.footer-section.social a {
+  margin-right: 15px;
+  transition: opacity 0.3s ease;
+}
+
+.footer-section.social a:hover {
+  opacity: 0.8;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid #003F7D;
+  margin-top: 20px;
+}
