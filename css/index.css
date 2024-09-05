@@ -18,8 +18,8 @@ body {
 }
 
 .top img {
-  display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .top nav a {
@@ -36,9 +36,9 @@ body {
 
 .about {
   text-align: center;
-  background-image: url(./assets/pla.jfif);
+  background-image: url('../assets/pla.jfif');
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   padding: 60px 20px;
   color: rgb(44, 110, 209);
   background-blend-mode: overlay;
@@ -60,9 +60,6 @@ hr {
 .destinations {
   padding: 35px 20px;
   background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-blend-mode: multiply;
 }
 
 .section-title {
@@ -97,12 +94,14 @@ hr {
   transform: scale(1.05);
 }
 
-
 .cards-container {
   display: flex;
   justify-content: space-around;
   padding: 40px 20px;
   flex-wrap: wrap;
+  background-image: url(../assets/pla.jfif) ;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .card {
@@ -156,6 +155,17 @@ hr {
   background-color: #0066cc;
 }
 
+/* Star Rating Styles */
+.fa-star {
+  color: #ddd;
+  font-size: 1.2rem;
+  margin: 0 2px;
+}
+
+.checked {
+  color: #ffcc00;
+}
+
 /* Footer */
 footer.footer {
   background-color: #00509E;
@@ -169,6 +179,10 @@ footer.footer {
   align-items: flex-start;
   flex-wrap: wrap;
   padding: 0 20px;
+}
+
+.footer-section {
+  margin-bottom: 20px;
 }
 
 .footer-section h3 {
@@ -194,10 +208,6 @@ footer.footer {
   color: #ffcc00;
 }
 
-.footer-section p {
-  margin: 5px 0;
-}
-
 .footer-section.social a {
   margin-right: 15px;
   transition: opacity 0.3s ease;
@@ -212,4 +222,40 @@ footer.footer {
   padding: 10px;
   border-top: 1px solid #003F7D;
   margin-top: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .top {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .about h2 {
+    font-size: 24px;
+  }
+
+  .section-title {
+    font-size: 22px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    text-align: center;
+  }
 }

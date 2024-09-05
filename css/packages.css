@@ -21,7 +21,7 @@ a:hover {
   color: #003F7D;
 }
 
-/* Header */
+
 header.top {
   background-color: #00509E;
   color: white;
@@ -47,12 +47,12 @@ nav a.active {
   border-bottom: 3px solid #ffcc00;
 }
 
-/* Sections */
+
 section {
   padding: 20px;
 }
 
-/* About Section */
+
 section.about {
   background: url('./assets/background.jpg') no-repeat center center/cover;
   color: white;
@@ -70,7 +70,7 @@ section.about p {
   margin-top: 10px;
 }
 
-/* Holiday Cards Section */
+
 section.holiday-cards {
   background-color: #f4f4f4;
   padding: 40px 20px;
@@ -136,6 +136,15 @@ section.holiday-cards .section-title {
 
 .btn:hover {
   background-color: #c0392b;
+}
+.fa-star {
+  color: #ddd;
+  font-size: 1.2rem;
+  margin: 0 2px;
+}
+
+.checked {
+  color: #ffcc00;
 }
 
 /* Booking Section */

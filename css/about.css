@@ -2,10 +2,14 @@
 .about-section {
   padding: 50px;
   text-align: center;
-  background-color: #474e5d;
+  background-color: #5e7ab6;
   color: white;
   margin-top: 3%;
 }
+nav a.active {
+  border-bottom: 2px solid #ffcc00;
+}
+
 
 .team-title {
   text-align: center;
@@ -15,7 +19,7 @@
 
 .row {
   padding: 0 16px;
-  background-color: #e5ebf1;
+  background-color: #ffffff;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -100,7 +104,6 @@
   }
 }
 
-/* Footer */
 footer.footer {
   background-color: #00509E;
   color: white;
@@ -109,14 +112,19 @@ footer.footer {
 
 .footer-content {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: flex-start;
   flex-wrap: wrap;
   padding: 0 20px;
 }
 
+.footer-section {
+  flex: 1;
+  padding: 10px;
+}
+
 .footer-section h3 {
-  font-size: 1.5em;
+  font-size: 1.6em;
   margin-bottom: 15px;
 }
 

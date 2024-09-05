@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Package Review</title>
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="icon" href="../assets/fav.png" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+<header class="top">
+  <img src="../assets/pla.jfif" width="180" height="60" alt="Plane Logo">
+  <nav>
+    <a href="../html/index.html" class="active">HOME</a>
+    <a href="../html/about.html" class="active">ABOUT</a>
+    <a href="../html/packages.html" class="active">PACKAGES</a>
+    <a href="../html/contact.html" class="active">CONTACT</a>
+    <a href="../html/signup.html" class="active">SIGN UP</a>
+  </nav>
+</header>
+
+<section class="about">
+  <h2>EXPLORE THE WORLD WITH US,<br>TRAVEL TO DESTINATIONS OF YOUR DREAMS</h2>
+</section>
+
+<hr />
+
+<section class="destinations">
+    <h1 class="section-title"> Destinations</h1>
+    <div class="row">
+      <div class="column">
+        <img src="../assets/h1.jfif" alt="">
+        <img src="../assets/h2.jfif" alt="">
+      </div>
+      <div class="column">
+        <img src="../assets/h3.jfif" alt="">
+        <img src="../assets/h4.jfif" alt="">
+      </div>
+    </div>
+</section>
+
+<section class="holiday-cards">
+    <h1 class="section-title">BOOK YOUR DESTINATIONS</h1>
+    <div class="cards-container">
+        <div class="card">
+            <img src="../assets/one.jfif" alt="SA Island">
+            <div class="card-content">
+                <h2><em>SA Island</em></h2>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+                <p>3500 USD</p>
+                <a href="#" class="btn">Book Here</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../assets/two.jfif" alt="TY Island">
+            <div class="card-content">
+                <h2><em>TY Island</em></h2>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <p>4500 USD</p>
+                <a href="#" class="btn">Book Here</a>
+            </div>
+        </div>
+        <div class="card">
+            <img src="../assets/three.jfif" alt="ZT Island">
+            <div class="card-content">
+                <h2><em>ZT Island</em></h2>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <p>5500 USD</p>
+                <a href="#" class="btn">Book Here</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<hr />
+
+<footer class="footer">
+  <div class="footer-content">
+      <div class="footer-section links">
+          <h3>Quick Links</h3>
+          <ul>
+              <li><a href="../html/index.html">Home</a></li>
+              <li><a href="../html/about.html">About</a></li>
+              <li><a href="../html/packages.html">Packages</a></li>
+              <li><a href="../html/contact.html">Contact Us</a></li>
+              <li><a href="../html/signup.html">Sign Up</a></li>
+          </ul>
+      </div>
+      <div class="footer-section social">
+          <h3>Follow Us</h3>
+          <a href="#"><img src="../assets/fb.jfif" alt="Facebook" width="24"></a>
+          <a href="#"><img src="../assets/tw.png" alt="Twitter" width="24"></a>
+          <a href="#"><img src="../assets/ig.jfif" alt="Instagram" width="24"></a>
+      </div>
+  </div>
+  <div class="footer-bottom">
+      <p>&copy; 2024 Aqua Safari Travelers | All rights reserved.</p>
+  </div>
+</footer>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const buttons = document.querySelectorAll(".btn");
+
+    // Function to handle the click event
+    const handleClick = function(event) {
+      event.preventDefault();
+
+      const destination = this.closest(".card").querySelector("h2").textContent;
+      const price = this.closest(".card").querySelector("p").textContent;
+
+      alert(`You are about to book a trip to ${destination} at a cost of ${price}.`);
+    };
+
+    // Intersection Observer callback
+    const observerCallback = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const button = entry.target;
+          button.addEventListener("click", handleClick);
+          observer.unobserve(button); // Unobserve to avoid attaching multiple event listeners
+        }
+      });
+    };
+
+    // Create a new IntersectionObserver instance
+    const observerOptions = {
+      root: null, // Use the viewport as the root
+      threshold: 0.1 // Trigger when 10% of the button is visible
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    // Observe each button
+    buttons.forEach(button => {
+      observer.observe(button);
+    });
+  });
+</script>
+</body>
+</html>
